@@ -6,9 +6,9 @@
     <!-- Ticker -->
     <div class="ticker" aria-label="Новостная лента">
       <div class="ticker-track">
-        <span>Е-COM МАРКЕТИНГ • СТРАТЕГИЯ • РИТЕЙЛ МЕДИА •</span>
-        <span>Е-COM МАРКЕТИНГ • СТРАТЕГИЯ • РИТЕЙЛ МЕДИА •</span>
-        <span>Е-COM МАРКЕТИНГ • СТРАТЕГИЯ • РИТЕЙЛ МЕДИА •</span>
+        <span>e-commerce • retail media • стратегия</span>
+        <span>e-commerce • retail media • стратегия</span>
+        <span>e-commerce • retail media • стратегия</span>
       </div>
     </div>
 
@@ -17,7 +17,7 @@
       <div class="container header-row">
         <div class="logo" aria-label="Логотип">
           <span class="logo-dot"></span>
-          Артём Никандров
+          Артем Никандров
         </div>
         <nav class="nav-links" aria-label="Главная навигация">
           <a href="#about" @click.prevent="scrollTo('about')">О себе</a>
@@ -40,18 +40,33 @@
       </div>
       <div class="container hero-grid">
         <div class="hero-main reveal">
-          <div class="eyebrow">Е-com стратег и преподаватель</div>
-          <h1 class="hero-title">Маркетинг, который растит онлайн-продажи.</h1>
+          <div class="eyebrow">e-commerce • retail media • стратегия</div>
+          <h1 class="hero-title">
+            <span class="hero-title-name">Никандров Артем</span>
+            <span class="hero-title-sub">e-commerce маркетолог и стратег</span>
+          </h1>
           <p class="hero-subtitle">
-            Помогаю брендам выстраивать маркетинг в е-коме: растить продажи,
-            формировать бренд, запускать рекламные стратегии и встроить e-commerce
-            в общую бизнес-логику.
+            Помогаю брендам выстраивать эффективный маркетинг в e-commerce и
+            масштабировать продажи на маркетплейсах и в онлайн-ритейле
           </p>
+          <div class="hero-specialties">
+            <p class="hero-specialties-title">Специализируюсь на:</p>
+            <ul class="hero-specialties-list">
+              <li>росте онлайн-продаж в e-commerce</li>
+              <li>разработке рекламных стратегий для маркетплейсов</li>
+              <li>работе с retail media и performance-инструментами</li>
+              <li>интеграции e-commerce в общую маркетинговую стратегию бренда</li>
+            </ul>
+            <p class="hero-specialties-note quote-card">
+              Мои консультации - это независимая экспертная оценка того, как ваш
+              бизнес ведет маркетинг в e-commerce: от стратегии до конкретных
+              рекламных кампаний.
+            </p>
+          </div>
           <div class="hero-actions">
             <a class="cta" href="#contacts" @click.prevent="scrollTo('contacts')">
               Записаться на консультацию
             </a>
-            <div class="hero-note">Ответ в Telegram в течение дня.</div>
           </div>
         </div>
         <div class="hero-side">
@@ -59,28 +74,7 @@
             <div class="photo-frame">
               <img class="photo-img" :src="authorPhoto" alt="Фото автора" />
             </div>
-            <figcaption class="photo-caption">Автор и ведущий е-com проектов.</figcaption>
           </figure>
-          <div class="hero-panel reveal" aria-label="Кратко обо мне">
-            <div class="panel-header">Ключевые факты</div>
-            <div class="panel-list">
-              <div class="panel-item">
-                <span class="tag">Образование</span>
-                <strong>Выпускник НИУ ВШЭ</strong>
-                <p>Преподаватель e-commerce.</p>
-              </div>
-              <div class="panel-item">
-                <span class="tag">Комьюнити</span>
-                <strong>Член комитета АРИР по E-Retail Media</strong>
-                <p>Работа с PepsiCo, RoRe, АДВ.</p>
-              </div>
-              <div class="panel-item">
-                <span class="tag">Экспертиза</span>
-                <strong>Дизайн-мышление и стратегия</strong>
-                <p>Автор телеграм-канала «БАЗАР ТУТ РАЗВЕЛИ».</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -88,52 +82,65 @@
     <!-- About -->
     <section class="section" id="about" aria-label="О себе">
       <div class="container">
-        <div class="section-head">
-          <h2 class="section-title">О себе</h2>
-        </div>
         <div class="about-grid">
-          <ul class="about-list" aria-label="Ключевые факты">
-            <li class="reveal">Выпускник НИУ ВШЭ.</li>
-            <li class="reveal">Член комитета АРИР по E‑Retail Media.</li>
-            <li class="reveal">Преподаватель и сертифицированный практик дизайн‑мышления.</li>
-            <li class="reveal">Опыт работы с 2020 в PepsiCo, RoRe, АДВ.</li>
-          </ul>
-          <div class="quote-card reveal">
-            «Помогаю брендам выстраивать маркетинг в е-коме: растить онлайн-продажи,
-            строить рекламные стратегии, формировать бренд.»
+          <div class="about-copy">
+            <h2 class="section-title about-section-title">О себе</h2>
+            <ul class="about-list" aria-label="Ключевые факты">
+              <li class="reveal">опыт в e-commerce с 2020 года: PepsiCo, RoRe (ex-Publicis Group), АДВ</li>
+              <li class="reveal">
+                автор Telegram-канала
+                <a href="https://t.me/ecom_ads" target="_blank" rel="noreferrer">БАЗАР ТУТ РАЗВЕЛИ</a>
+              </li>
+              <li class="reveal">
+                преподаватель курса
+                <a href="https://ecomedu.rore.group/" target="_blank" rel="noreferrer">Ecom-маркетолог</a>
+              </li>
+              <li class="reveal">член комитета АРИР по E-Retail Media</li>
+              <li class="reveal">выпускник НИУ ВШЭ, Факультет мировой экономики и мировой политики</li>
+              <li class="reveal">сертифицированный практик дизайн-мышления d.standards</li>
+            </ul>
+          </div>
+          <div class="about-when reveal" id="when" aria-label="Я нужен, когда">
+            <h2 class="section-title about-section-title about-when-heading">Я нужен, когда</h2>
+            <ul class="about-when-list">
+              <li>бренд выходит на маркетплейсы (Ozon, Wildberries, Яндекс Маркет) и нужна стратегия</li>
+              <li>рекламный бюджет растёт, но e-commerce продажи не масштабируются</li>
+              <li>нет понимания, как эффективно использовать retail media</li>
+              <li>команда или агентство не видят точек роста в рекламе</li>
+              <li>нужно встроить e-commerce в общий digital и маркетинговый микс</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- When -->
-    <section class="section" id="when" aria-label="Когда ко мне обращаются">
+    <section class="section" id="approach" aria-label="Подход к работе">
       <div class="container">
-        <div class="section-head">
-          <h2 class="section-title">Когда ко мне обращаются</h2>
-        </div>
-        <div class="when-rail">
-          <div class="when-shelf" aria-label="Сценарии обращений">
-            <article class="when-card reveal">
-              <span class="when-index">01</span>
-              Бренд выходит на маркетплейсы.
-            </article>
-            <article class="when-card reveal">
-              <span class="when-index">02</span>
-              Рекламный бюджет растёт.
-            </article>
-            <article class="when-card reveal">
-              <span class="when-index">03</span>
-              Нужно встроить e-commerce в общую стратегию.
-            </article>
-            <article class="when-card reveal">
-              <span class="when-index">04</span>
-              Команда не понимает ритейл медиа.
-            </article>
-            <article class="when-card reveal">
-              <span class="when-index">05</span>
-              Агентству нужна экспертиза.
-            </article>
+        <div class="approach-card reveal">
+          <div class="approach-copy">
+            <div class="section-head">
+              <h2 class="section-title">Подход к работе</h2>
+            </div>
+            <p class="approach-lead">
+              Работаю на стыке стратегии, аналитики и практического опыта в e-commerce
+            </p>
+            <p class="approach-text">
+              Использую методологию дизайн-мышления, ориентированную на поведение и
+              потребности конечного пользователя
+            </p>
+            <p class="approach-text">
+              Рассматриваю маркетинг в e-commerce не только как performance (CPM,
+              ДРР), но и как систему точек контакта бренда с аудиторией на всех
+              этапах CJM
+            </p>
+          </div>
+          <div class="approach-points">
+            <div class="approach-points-title">Опыт работы на стороне бренда и агентства позволяет:</div>
+            <ul class="approach-list">
+              <li>быстро находить слабые места в стратегии</li>
+              <li>давать применимые рекомендации</li>
+              <li>учитывать реальные ограничения бизнеса</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -142,43 +149,46 @@
     <!-- Services -->
     <section class="section" id="services" aria-label="Мои услуги">
       <div class="container">
-        <div class="services-hybrid">
-          <div class="services-sticky">
-            <div class="section-head">
-              <h2 class="section-title">Мои услуги</h2>
-            </div>
-            <p class="services-lead">
-              Горизонтальный формат позволяет быстро сравнить форматы работы и
-              почувствовать динамику.
-            </p>
-            <div class="services-progress" aria-hidden="true">
-              <div class="services-progress-bar" :style="{ width: servicesProgress + '%' }"></div>
-            </div>
-            <div class="services-hint">Листайте вправо</div>
-          </div>
-          <div class="services-rail">
-            <div class="service-shelf" ref="serviceShelf" aria-label="Список услуг">
-              <article class="service-card reveal">
-                <div class="service-title">Консультация по ритейл медиа (1,5 часа)</div>
-                <span>Q&A сессия по актуальным темам в е-ком рекламе</span>
-              </article>
-              <article class="service-card reveal">
-                <div class="service-title">Разработка маркетинговой стратегии в е-коме</div>
-                <span>Формирование стратегии работы с рекламной на маркетплейсами онлайн-ритейлерах.</span>
-              </article>
-              <article class="service-card reveal">
-                <div class="service-title">Приземление digital стратегии в тактику для е-кома</div>
-                <span>Подготовка тактических рекомендаций и медиаплана с учётом действующей digital стратегии для рекламных кампаний в е-коме</span>
-              </article>
-              <article class="service-card reveal">
-                <div class="service-title">Аудит рекламных кампаний</div>
-                <span>Анализ текущих размещений в е-коме и поиск точек роста</span>
-              </article>
-              <article class="service-card reveal">
-                <div class="service-title">Обучение команд (2 часа)</div>
-                <span>Тренинг по работе с ритейл медиа и маркетингом в е-коме</span>
+        <div class="section-head">
+          <h2 class="section-title">Мои услуги</h2>
+        </div>
+        <div class="services-rail">
+          <div class="services-slider" aria-live="polite">
+            <button
+              class="services-arrow services-arrow--prev"
+              type="button"
+              @click="showPrevService"
+              :disabled="!servicesCanScrollPrev"
+              aria-label="Предыдущие услуги"
+            >
+              <span aria-hidden="true">‹</span>
+            </button>
+            <div class="services-track" ref="servicesTrack">
+              <article
+                v-for="service in services"
+                :key="service.title"
+                class="service-card reveal"
+              >
+                <div class="service-card-top">
+                  <div class="service-tag">{{ service.duration }}</div>
+                  <div class="service-price-chip">{{ service.price }}</div>
+                </div>
+                <div class="service-title">{{ service.title }}</div>
+                <p class="service-description">{{ service.description }}</p>
+                <ul class="service-list">
+                  <li v-for="point in service.points" :key="point">{{ point }}</li>
+                </ul>
               </article>
             </div>
+            <button
+              class="services-arrow services-arrow--next"
+              type="button"
+              @click="showNextService"
+              :disabled="!servicesCanScrollNext"
+              aria-label="Следующие услуги"
+            >
+              <span aria-hidden="true">›</span>
+            </button>
           </div>
         </div>
       </div>
@@ -197,11 +207,18 @@
           <div
             v-for="logo in clientLogos"
             :key="logo.name"
-            class="logo-badge reveal"
+            class="logo-item reveal"
+            :class="{ 'logo-item--boosted': logo.boosted }"
             :aria-label="logo.name"
             :title="logo.name"
           >
-            <img class="logo-img" :src="logo.src" :alt="`Логотип ${logo.name}`" loading="lazy" />
+            <img
+              class="logo-img"
+              :class="{ 'logo-img--boosted': logo.boosted }"
+              :src="logo.src"
+              :alt="`Логотип ${logo.name}`"
+              loading="lazy"
+            />
           </div>
         </div>
         <div class="section-sub">
@@ -211,11 +228,16 @@
           <div
             v-for="logo in platformLogos"
             :key="logo.name"
-            class="logo-badge reveal"
+            class="logo-item reveal"
             :aria-label="logo.name"
             :title="logo.name"
           >
-            <img class="logo-img" :src="logo.src" :alt="`Логотип ${logo.name}`" loading="lazy" />
+            <img
+              class="logo-img"
+              :src="logo.src"
+              :alt="`Логотип ${logo.name}`"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
@@ -228,9 +250,26 @@
           <h2 class="section-title">Контакты</h2>
         </div>
         <div class="contact-card reveal">
-          <a class="cta" href="#" aria-label="Записаться через Telegram-бота">
-            Записаться через Telegram-бота
-          </a>
+          <div class="contact-links">
+            <a
+              class="cta"
+              href="https://t.me/artnikandroff"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Записаться через Telegram"
+            >
+              Записаться через Telegram
+            </a>
+            <a
+              class="cta"
+              href="https://max.ru/u/f9LHodD0cOKOk3e7pHhYRhaIWWumNPMgaK_WPG-4XbidA4zJc0MUe_FUY-8"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Записаться через Max"
+            >
+              Записаться через Max
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -251,54 +290,155 @@
 </template>
 
 <script setup>
-import { onBeforeUnmount, onMounted, ref } from "vue";
-import authorPhoto from "./assets/author-photo.png";
+import { computed, onBeforeUnmount, onMounted, ref } from "vue";
+import authorPhoto from "./assets/author-photo-artem.jpg";
 
 const clientLogos = [
-  { name: "Karcher", src: "/logos/karcher.png" },
-  { name: "Electrolux", src: "/logos/electrolux.png" },
-  { name: "Nestle", src: "/logos/nestle.png" },
-  { name: "PepsiCo", src: "/logos/PepsiCo.png" },
-  { name: "JDE", src: "/logos/JDE.png" },
-  { name: "Borjomi", src: "/logos/borjomi.png" },
-  { name: "Акрихин", src: "/logos/Акрихин.png" },
-  { name: "Сотекс", src: "/logos/Сотекс.png" },
-  { name: "Фрутоняня", src: "/logos/Фрутоняня.png" },
-  { name: "Билайн", src: "/logos/Билайн.png" },
-  { name: "Woerwag", src: "/logos/Woerwag.png" },
-  { name: "Аванта", src: "/logos/Аванта.png" },
-  { name: "Село Зелёное", src: "/logos/Село_Зелёное.png" },
-  { name: "X5", src: "/logos/X5.png" },
-  { name: "Коломенский", src: "/logos/Коломенский.png" },
-  { name: "Полисорб", src: "/logos/Полисорб.png" },
+  { name: "Karcher", src: "/logos/karcher-new.png", boosted: true },
+  { name: "Electrolux", src: "/logos/electrolux-new.png", boosted: true },
+  { name: "Nestle", src: "/logos/nestle-new.png" },
+  { name: "PepsiCo", src: "/logos/PepsiCo-new.png", boosted: true },
+  { name: "JDE", src: "/logos/JDE-new.png" },
+  { name: "Borjomi", src: "/logos/borjomi-new.png" },
+  { name: "Акрихин", src: "/logos/akrihin-new.png", boosted: true },
+  { name: "Сотекс", src: "/logos/sotex-new.png", boosted: true },
+  { name: "ФрутоНяня", src: "/logos/fruto-nyanya-new.png" },
+  { name: "билайн", src: "/logos/beeline-new.png" },
+  { name: "Woerwag", src: "/logos/woerwag-new.png" },
+  { name: "Аванта", src: "/logos/avanta-new.png", boosted: true },
+  { name: "Село Зелёное", src: "/logos/selo-zelenoe-new.png" },
+  { name: "X5", src: "/logos/X5-new.png" },
+  { name: "Коломенский", src: "/logos/kolomenskiy-new.png", boosted: true },
+  { name: "Полисорб", src: "/logos/polisorb-new.png", boosted: true },
 ];
 
 const platformLogos = [
-  { name: "OZON", src: "/logos/OZON.png" },
-  { name: "wb", src: "/logos/wb.png" },
-  { name: "ЯМаркет", src: "/logos/ЯМаркет.png" },
-  { name: "Мегамаркет", src: "/logos/Мегамаркет.png" },
-  { name: "Самокат", src: "/logos/Самокат.png" },
-  { name: "Яндекс Лавка", src: "/logos/Яндекс Лавка.png" },
-  { name: "Яндекс Еда", src: "/logos/Яндекс Еда.png" },
-  { name: "Деливери", src: "/logos/Деливери.png" },
-  { name: "Купер", src: "/logos/Купер.png" },
-  { name: "Лента", src: "/logos/Лента.png" },
-  { name: "X5", src: "/logos/X5.png" },
-  { name: "Ситилинк", src: "/logos/Ситилинк.png" },
-  { name: "apteka.ru", src: "/logos/apteka.ru.png" },
-  { name: "Магнит", src: "/logos/Магнит.png" },
-  { name: "Еаптека", src: "/logos/Еаптека.png" },
-  { name: "Ютека", src: "/logos/Ютека.png" },
-  { name: "Апрель", src: "/logos/Апрель.png" },
+  { name: "Ozon", src: "/logos/Ozon-new.png" },
+  { name: "Wildberries", src: "/logos/WB-new.png" },
+  { name: "Яндекс Маркет", src: "/logos/yandex-market-new.png" },
+  { name: "Мегамаркет", src: "/logos/mega-market-new.png" },
+  { name: "Самокат", src: "/logos/samokat-new.png" },
+  { name: "Яндекс Лавка", src: "/logos/yandex-lavka-new.png" },
+  { name: "Яндекс Еда", src: "/logos/yandex-eda-new-2.png" },
+  { name: "Деливери", src: "/logos/delivery-new.png" },
+  { name: "Купер", src: "/logos/kuper-new.png" },
+  { name: "Лента", src: "/logos/lenta-new.png" },
+  { name: "X5", src: "/logos/X5-new.png" },
+  { name: "Ситилинк", src: "/logos/citylink-new.png" },
+  { name: "apteka.ru", src: "/logos/apteka-ru-new.png" },
+  { name: "Магнит", src: "/logos/magnit-new.png" },
+  { name: "Еаптека", src: "/logos/eapteka-new.png" },
+  { name: "Ютека", src: "/logos/yuteka-new.png" },
+  { name: "Апрель", src: "/logos/aprel-new.png", boosted: true },
+  { name: "Яндекс UrbanAds", src: "/logos/yandex-urbanads-new.png" },
+];
+
+const services = [
+  {
+    title: "Консультация по retail media и рекламе в e-commerce",
+    duration: "1,5 часа",
+    price: "50 000 руб",
+    description: "Разбор вашей ситуации и ответы на ключевые вопросы:",
+    points: [
+      "как распределять бюджет между маркетплейсами",
+      "какие рекламные инструменты использовать",
+      "как оценивать эффективность (ДРР, TACoS, омниканальные приросты)",
+      "как работать с трафиком и конверсией",
+      "что улучшить в контенте и креативах",
+    ],
+  },
+  {
+    title: "Разработка стратегии маркетинга в e-commerce",
+    duration: "Стратегический проект",
+    price: "от 250 000 руб",
+    description: "Комплексная стратегия работы с маркетплейсами и онлайн-ритейлом:",
+    points: [
+      "анализ рынка и категории",
+      "конкурентный анализ",
+      "CJM и точки контакта",
+      "мэппинг онлайн-ритейлеров",
+      "медиамикс и сплит инструментов",
+      "прогноз продаж и эффективности",
+    ],
+  },
+  {
+    title: "Адаптация digital-стратегии под e-commerce",
+    duration: "Тактический блок",
+    price: "от 150 000 руб",
+    description: "Перевод общей маркетинговой стратегии в конкретную тактику для e-commerce:",
+    points: [
+      "медиапланирование",
+      "выбор каналов и инструментов",
+      "синхронизация с performance и брендовыми задачами",
+    ],
+  },
+  {
+    title: "Аудит рекламы в e-commerce",
+    duration: "Аудит и рекомендации",
+    price: "от 100 000 руб",
+    description: "Анализ текущих рекламных кампаний:",
+    points: [
+      "оценка эффективности размещений",
+      "проверка закупочных метрик по рынку",
+      "выявление точек роста",
+      "рекомендации по оптимизации",
+    ],
+  },
+  {
+    title: "Обучение команд e-commerce и retail media",
+    duration: "2 часа",
+    price: "120 000 руб",
+    description: "Практический тренинг под задачи бизнеса:",
+    points: [
+      "как работает реклама на маркетплейсах",
+      "ключевые метрики и аналитика",
+      "тренды e-commerce и retail media",
+      "разбор кейсов из вашей категории",
+    ],
+  },
+  {
+    title: "Карьерная консультация в e-commerce",
+    duration: "1 час",
+    price: "10 000 руб",
+    description: "Для специалистов уровня junior-middle:",
+    points: [
+      "разбор резюме",
+      "рекомендации по карьерному росту",
+      "ориентиры по зарплате",
+      "развитие личного бренда в e-commerce",
+    ],
+  },
 ];
 
 const year = new Date().getFullYear();
 const scrollProgress = ref(0);
-const servicesProgress = ref(0);
-const serviceShelf = ref(null);
+const servicesTrack = ref(null);
+const servicesCanScrollPrev = ref(false);
+const servicesCanScrollNext = ref(true);
 let rafId = 0;
 let revealObserver = null;
+
+const updateServicesArrows = () => {
+  const el = servicesTrack.value;
+  if (!el) return;
+  const maxScrollLeft = el.scrollWidth - el.clientWidth;
+  servicesCanScrollPrev.value = el.scrollLeft > 4;
+  servicesCanScrollNext.value = el.scrollLeft < maxScrollLeft - 4;
+};
+
+const scrollServicesByPage = (direction) => {
+  const el = servicesTrack.value;
+  if (!el) return;
+  const styles = window.getComputedStyle(el);
+  const gap = Number.parseFloat(styles.columnGap || styles.gap || "0") || 0;
+  const cardsPerView = window.innerWidth <= 960 ? 1 : 2;
+  const cardWidth = (el.clientWidth - gap * (cardsPerView - 1)) / cardsPerView;
+  const offset = (cardWidth + gap) * cardsPerView * direction;
+  el.scrollBy({ left: offset, behavior: "smooth" });
+};
+
+const showPrevService = () => scrollServicesByPage(-1);
+const showNextService = () => scrollServicesByPage(1);
 
 const scrollTo = (id) => {
   const target = document.getElementById(id);
@@ -325,23 +465,15 @@ const handleScroll = () => {
   });
 };
 
-const updateServicesProgress = () => {
-  const el = serviceShelf.value;
-  if (!el) return;
-  const max = el.scrollWidth - el.clientWidth;
-  const progress = max > 0 ? (el.scrollLeft / max) * 100 : 0;
-  servicesProgress.value = Math.min(100, Math.max(0, progress));
-};
-
 onMounted(() => {
   updateScrollProgress();
-  updateServicesProgress();
+  updateServicesArrows();
 
   window.addEventListener("scroll", handleScroll, { passive: true });
-  window.addEventListener("resize", updateServicesProgress, { passive: true });
+  window.addEventListener("resize", updateServicesArrows, { passive: true });
 
-  if (serviceShelf.value) {
-    serviceShelf.value.addEventListener("scroll", updateServicesProgress, { passive: true });
+  if (servicesTrack.value) {
+    servicesTrack.value.addEventListener("scroll", updateServicesArrows, { passive: true });
   }
 
   revealObserver = new IntersectionObserver(
@@ -361,9 +493,9 @@ onMounted(() => {
 
 onBeforeUnmount(() => {
   window.removeEventListener("scroll", handleScroll);
-  window.removeEventListener("resize", updateServicesProgress);
-  if (serviceShelf.value) {
-    serviceShelf.value.removeEventListener("scroll", updateServicesProgress);
+  window.removeEventListener("resize", updateServicesArrows);
+  if (servicesTrack.value) {
+    servicesTrack.value.removeEventListener("scroll", updateServicesArrows);
   }
   if (rafId) {
     window.cancelAnimationFrame(rafId);
@@ -376,17 +508,26 @@ onBeforeUnmount(() => {
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Space+Grotesk:wght@400;600;700&display=swap");
 
 :root {
-  --bg: #f2f2f2;
-  --ink: #0a0a0a;
-  --ink-soft: #2b2b2b;
-  --accent: #d6e86a;
-  --accent-ink: #0a0a0a;
-  --card: #ffffff;
-  --border: #0a0a0a;
-  --shadow: 6px 6px 0 rgba(0, 0, 0, 0.16);
-  --shadow-soft: 10px 14px 28px rgba(10, 10, 10, 0.12);
-  --shadow-float: 12px 18px 32px rgba(10, 10, 10, 0.18);
-  --text-shadow: 0 1px 0 rgba(10, 10, 10, 0.22);
+  --bg: #141414;
+  --bg-soft: #1a1a1a;
+  --bg-muted: #262626;
+  --ink: #ffffff;
+  --ink-strong: #ffffff;
+  --ink-soft: #ffffff;
+  --ink-muted: #ffffff;
+  --accent: #ff5b00;
+  --accent-hover: #ff7a33;
+  --accent-pressed: #cc4900;
+  --accent-ink: #ffffff;
+  --card: #1a1a1a;
+  --card-alt: #262626;
+  --surface-dark: #262626;
+  --border: #3a3a3a;
+  --border-strong: #ffffff;
+  --shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+  --shadow-soft: 0 20px 48px rgba(0, 0, 0, 0.28);
+  --shadow-float: 0 24px 60px rgba(0, 0, 0, 0.34);
+  --text-shadow: none;
   --container: 1120px;
   --radius: 18px;
   --transition: 180ms ease;
@@ -405,16 +546,21 @@ body {
   color: var(--ink);
   background: var(--bg);
   line-height: 1.6;
+  overflow-x: hidden;
   scrollbar-width: thin;
-  scrollbar-color: var(--ink) transparent;
+  scrollbar-color: var(--border-strong) transparent;
 }
 
 .page {
   min-height: 100vh;
-  background-image:
-    linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
-    linear-gradient(180deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
-  background-size: 120px 120px;
+  background:
+    linear-gradient(118deg, transparent 0 10%, rgba(255, 91, 0, 0.52) 10.12%, transparent 10.42%),
+    linear-gradient(73deg, transparent 0 24%, rgba(255, 91, 0, 0.44) 24.14%, transparent 24.42%),
+    linear-gradient(134deg, transparent 0 47%, rgba(255, 91, 0, 0.38) 47.12%, transparent 47.38%),
+    linear-gradient(58deg, transparent 0 66%, rgba(255, 91, 0, 0.34) 66.16%, transparent 66.42%),
+    linear-gradient(149deg, transparent 0 82%, rgba(255, 91, 0, 0.3) 82.14%, transparent 82.34%),
+    linear-gradient(180deg, #141414 0%, #1a1a1a 100%);
+  position: relative;
 }
 
 ::-webkit-scrollbar {
@@ -427,7 +573,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--ink);
+  background: var(--border-strong);
   border-radius: 999px;
   border: 2px solid var(--bg);
 }
@@ -438,13 +584,13 @@ body {
   left: 0;
   height: 4px;
   width: 100%;
-  background: rgba(10, 10, 10, 0.08);
+  background: rgba(255, 255, 255, 0.12);
   z-index: 30;
 }
 
 .scroll-progress-bar {
   height: 100%;
-  background: linear-gradient(90deg, #0a0a0a 0%, #d6e86a 100%);
+  background: linear-gradient(90deg, var(--ink-strong) 0%, var(--accent) 100%);
   width: 0%;
   transition: width 120ms linear;
 }
@@ -460,14 +606,14 @@ a {
 }
 
 .ticker {
-  background: var(--ink);
+  background: var(--surface-dark);
   color: #ffffff;
   font-family: "IBM Plex Mono", monospace;
   text-transform: uppercase;
   letter-spacing: 0.24em;
   font-size: 12px;
   overflow: hidden;
-  border-bottom: 2px solid var(--ink);
+  border-bottom: 1px solid var(--border-strong);
 }
 
 .ticker-track {
@@ -493,9 +639,9 @@ a {
 .site-header {
   position: sticky;
   top: 0;
-  background: rgba(246, 241, 233, 0.9);
+  background: rgba(20, 20, 20, 0.92);
   backdrop-filter: blur(12px);
-  border-bottom: 2px solid var(--border);
+  border-bottom: 1px solid var(--border);
   z-index: 10;
 }
 
@@ -512,6 +658,7 @@ a {
   align-items: center;
   gap: 12px;
   font-weight: 700;
+  font-size: clamp(14px, 1.7vw, 16px);
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
@@ -521,7 +668,7 @@ a {
   height: 18px;
   border-radius: 50%;
   background: var(--accent);
-  border: 2px solid var(--ink);
+  border: 1px solid var(--border-strong);
 }
 
 .nav-links {
@@ -540,7 +687,7 @@ a {
 }
 
 .nav-links a:hover {
-  border-color: var(--ink);
+  border-color: var(--accent);
 }
 
 .cta {
@@ -549,18 +696,25 @@ a {
   justify-content: center;
   background: var(--accent);
   color: var(--accent-ink);
-  border: 2px solid var(--ink);
+  border: 1px solid var(--accent);
   padding: 14px 26px;
   border-radius: 999px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   box-shadow: var(--shadow);
-  transition: transform var(--transition);
+  transition: transform var(--transition), background var(--transition), border-color var(--transition);
 }
 
 .cta:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
   transform: translate(-2px, -2px);
+}
+
+.cta:active {
+  background: var(--accent-pressed);
+  border-color: var(--accent-pressed);
 }
 
 .cta.small {
@@ -584,8 +738,8 @@ a {
 
 .hero-main {
   padding: 40px;
-  background: #ffffff;
-  border: 2px solid var(--border);
+  background: var(--card);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
@@ -608,81 +762,34 @@ a {
 }
 
 .orb {
-  position: absolute;
-  border: 2px solid var(--border);
-  background: var(--accent);
-  opacity: 0.35;
-  filter: blur(1px);
-  box-shadow: var(--shadow);
-}
-
-.orb-1 {
-  width: 240px;
-  height: 240px;
-  border-radius: 32px;
-  top: 10%;
-  left: 6%;
-  transform: translateY(var(--parallax-slow)) rotate(6deg);
-}
-
-.orb-2 {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  top: 52%;
-  right: 8%;
-  transform: translateY(var(--parallax)) rotate(-10deg);
-}
-
-.orb-3 {
-  width: 140px;
-  height: 140px;
-  border-radius: 28px;
-  bottom: 12%;
-  left: 42%;
-  transform: translateY(calc(var(--parallax-slow) * 0.8)) rotate(14deg);
+  display: none;
 }
 
 .photo-card {
   margin: 0;
   padding: 18px;
-  border: 2px solid var(--border);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: #ffffff;
+  background: var(--card);
   box-shadow: var(--shadow);
   display: grid;
   gap: 14px;
-  position: relative;
-  overflow: hidden;
-}
-
-.photo-card::after {
-  content: "";
-  position: absolute;
-  right: -24px;
-  top: -24px;
-  width: 120px;
-  height: 120px;
-  background: var(--accent);
-  border: 2px solid var(--border);
-  border-radius: 22px;
-  transform: rotate(12deg);
-  opacity: 0.55;
-  pointer-events: none;
 }
 
 .photo-frame {
   border-radius: calc(var(--radius) - 6px);
-  border: 2px solid var(--border);
+  border: 1px solid var(--border);
   overflow: hidden;
-  background: #f7f7f7;
+  background: var(--bg-muted);
+  aspect-ratio: 5 / 8.6;
 }
 
 .photo-img {
   width: 100%;
-  height: clamp(260px, 44vw, 420px);
+  height: 100%;
+  min-height: clamp(420px, 58vw, 620px);
   object-fit: cover;
-  object-position: center top;
+  object-position: center 18%;
   display: block;
   filter: saturate(0.95) contrast(1.05);
 }
@@ -710,10 +817,50 @@ a {
   text-shadow: var(--text-shadow);
 }
 
+.hero-title-name {
+  display: block;
+  color: var(--accent);
+}
+
+.hero-title-sub {
+  display: block;
+  font-size: 0.68em;
+  margin-top: 0.1em;
+}
+
 .hero-subtitle {
   font-size: 18px;
-  color: var(--ink-soft);
+  color: var(--ink-strong);
   margin-bottom: 28px;
+}
+
+.hero-specialties {
+  margin-bottom: 28px;
+}
+
+.hero-specialties-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: var(--ink-strong);
+}
+
+.hero-specialties-list {
+  margin: 0 0 18px;
+  padding-left: 22px;
+  display: grid;
+  gap: 10px;
+  color: var(--ink-strong);
+}
+
+.hero-specialties-list li {
+  line-height: 1.45;
+}
+
+.hero-specialties-note {
+  margin: 0;
+  color: var(--ink-strong);
+  line-height: 1.55;
 }
 
 .hero-actions {
@@ -731,9 +878,9 @@ a {
 }
 
 .hero-panel {
-  border: 2px solid var(--border);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: var(--card);
+  background: var(--card-alt);
   padding: 28px;
   box-shadow: var(--shadow);
 }
@@ -757,7 +904,7 @@ a {
 }
 
 .panel-item p {
-  color: var(--ink-soft);
+  color: var(--ink-muted);
 }
 
 .tag {
@@ -770,6 +917,8 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.22em;
   font-family: "IBM Plex Mono", monospace;
+  color: var(--ink);
+  background: var(--card);
   width: fit-content;
 }
 
@@ -808,13 +957,13 @@ a {
   gap: 8px;
   padding: 8px 18px;
   border-radius: 14px;
-  border: 2px solid var(--border);
+  border: 1px solid var(--border);
   font-family: "IBM Plex Mono", monospace;
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.14em;
-  background: var(--accent);
+  background: var(--card);
   box-shadow: var(--shadow);
 }
 
@@ -824,8 +973,8 @@ a {
 }
 
 .about-list {
-  list-style: none;
-  padding: 0;
+  list-style: disc;
+  padding-left: 24px;
   margin: 0;
   display: grid;
   gap: 12px;
@@ -834,32 +983,155 @@ a {
 }
 
 .about-list li {
-  padding: 14px 16px;
-  border-radius: var(--radius);
-  border: 2px solid var(--border);
-  background: #ffffff;
-  box-shadow: var(--shadow);
+  padding-left: 4px;
   font-weight: 600;
-  transition: transform var(--transition), box-shadow var(--transition);
 }
 
 .about-list li:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: var(--shadow-soft);
+  transform: none;
+  box-shadow: none;
+}
+
+.about-list a {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.about-list a:hover {
+  color: var(--accent-hover);
 }
 
 .about-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
   gap: 28px;
-  align-items: start;
+  align-items: stretch;
+}
+
+.about-copy {
+  min-width: 0;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background:
+    radial-gradient(circle at top right, rgba(255, 91, 0, 0.1), transparent 32%),
+    linear-gradient(180deg, rgba(38, 38, 38, 0.95), rgba(26, 26, 26, 0.98));
+  box-shadow: var(--shadow);
+}
+
+.about-section-title {
+  margin: 0 0 22px;
+}
+
+.about-when {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background:
+    radial-gradient(circle at top right, rgba(255, 91, 0, 0.14), transparent 34%),
+    linear-gradient(180deg, rgba(38, 38, 38, 0.95), rgba(26, 26, 26, 0.98));
+  box-shadow: var(--shadow);
+}
+
+.about-when-heading {
+  margin-bottom: 16px;
+}
+
+.about-when-title {
+  margin: 0 0 18px;
+  font-size: 18px;
+  line-height: 1.45;
+  color: var(--ink-strong);
+}
+
+.about-when-list {
+  margin: 0;
+  padding-left: 22px;
+  display: grid;
+  gap: 14px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.about-when-list li::marker {
+  color: var(--accent);
+}
+
+.approach-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+  gap: 28px;
+  padding: 32px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background:
+    radial-gradient(circle at top left, rgba(255, 91, 0, 0.12), transparent 28%),
+    linear-gradient(180deg, rgba(26, 26, 26, 0.98), rgba(20, 20, 20, 1));
+  box-shadow: var(--shadow);
+}
+
+.approach-copy {
+  min-width: 0;
+}
+
+.approach-lead {
+  margin: 0 0 18px;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.approach-text {
+  margin: 0 0 16px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--ink-strong);
+  max-width: 70ch;
+}
+
+.approach-text:last-child {
+  margin-bottom: 0;
+}
+
+.approach-points {
+  align-self: stretch;
+  margin-top: 62px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: calc(var(--radius) - 2px);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.approach-points-title {
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.approach-list {
+  margin: 0;
+  padding-left: 22px;
+  display: grid;
+  gap: 12px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.approach-list li::marker {
+  color: var(--accent);
 }
 
 .quote-card {
   padding: 24px;
-  border: 2px solid var(--border);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: #ffffff;
+  background: var(--card-alt);
   font-style: italic;
   box-shadow: var(--shadow);
   transition: transform var(--transition), box-shadow var(--transition);
@@ -894,7 +1166,7 @@ a {
   padding: 24px 22px 24px 58px;
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  background: #ffffff;
+  background: var(--card);
   box-shadow: var(--shadow);
   font-weight: 600;
   min-height: 110px;
@@ -933,30 +1205,20 @@ a {
   place-items: center;
 }
 
-.service-shelf {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: minmax(320px, 1fr);
-  gap: 22px;
-  padding-block: 18px;
-  padding-inline: 12px 24px;
-  overflow-x: auto;
-  overflow-y: visible;
-  scroll-snap-type: x mandatory;
-  scroll-padding-inline: 24px;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-color: var(--accent) transparent;
-}
-
 .service-card {
-  padding: 28px;
+  flex: 0 0 calc((100% - 22px) / 2);
+  min-height: 520px;
+  box-sizing: border-box;
+  padding: 26px;
   border-radius: var(--radius);
-  border: 2px solid var(--border);
-  background: #ffffff;
+  border: 1px solid var(--border);
+  background:
+    radial-gradient(circle at top right, rgba(255, 91, 0, 0.12), transparent 30%),
+    linear-gradient(180deg, rgba(38, 38, 38, 0.96), rgba(26, 26, 26, 0.98));
   box-shadow: var(--shadow);
   display: grid;
-  gap: 14px;
-  min-height: 220px;
+  gap: 16px;
+  align-content: start;
   scroll-snap-align: start;
   transition: transform var(--transition), box-shadow var(--transition);
 }
@@ -966,126 +1228,189 @@ a {
   box-shadow: var(--shadow-float);
 }
 
+.service-card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.service-tag,
+.service-price-chip {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.03);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.service-price-chip {
+  color: var(--accent);
+}
+
 .service-title {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.2;
   text-shadow: var(--text-shadow);
 }
 
-.service-card span {
-  color: var(--ink-soft);
-  font-size: 16px;
-  line-height: 1.5;
+.service-description {
+  margin: 0;
+  color: var(--ink-muted);
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-@media (min-width: 900px) {
-  .service-shelf {
-    grid-auto-columns: minmax(360px, 420px);
-  }
-}
-
-@media (max-width: 600px) {
-  .service-shelf {
-    grid-auto-columns: 88vw;
-    scroll-padding-inline: 18px;
-  }
-}
-
-.service-shelf::-webkit-scrollbar {
-  height: 8px;
-}
-
-.service-shelf::-webkit-scrollbar-thumb {
-  background: var(--accent);
-  border: 2px solid #ffffff;
-}
-
-.services-hybrid {
+.service-list {
+  margin: 0;
+  padding-left: 22px;
   display: grid;
-  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
-  gap: 30px;
-  align-items: start;
+  gap: 14px;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-.services-sticky {
-  position: sticky;
-  top: 120px;
-  display: grid;
-  gap: 16px;
+.service-list li::marker {
+  color: var(--accent);
 }
 
 .services-rail {
-  padding-block: 26px;
+  padding-top: 10px;
 }
 
-.services-lead {
-  font-size: 16px;
-  color: var(--ink-soft);
-  max-width: 320px;
+.services-slider {
+  position: relative;
 }
 
-.services-progress {
-  height: 6px;
-  width: 100%;
-  background: rgba(10, 10, 10, 0.1);
+.services-track {
+  display: flex;
+  gap: 22px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.services-track::-webkit-scrollbar {
+  display: none;
+}
+
+.services-arrow {
+  appearance: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 54px;
+  height: 54px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 999px;
-  overflow: hidden;
-  border: 1px solid var(--border);
+  background: rgba(20, 20, 20, 0.84);
+  color: var(--ink-strong);
+  backdrop-filter: blur(10px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition), transform var(--transition), border-color var(--transition), color var(--transition);
+  z-index: 2;
 }
 
-.services-progress-bar {
-  height: 100%;
-  width: 0%;
-  background: var(--accent);
-  transition: width 120ms ease;
+.services-slider:hover .services-arrow:not(:disabled) {
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.services-hint {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
+.services-arrow--prev {
+  left: -18px;
+}
+
+.services-arrow--next {
+  right: -18px;
+}
+
+.services-arrow:hover:not(:disabled) {
+  transform: translateY(-50%) scale(1.04);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.services-arrow:disabled {
+  opacity: 0;
+  pointer-events: none;
+  cursor: not-allowed;
 }
 
 .logo-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+  margin-top: 14px;
+  align-items: center;
 }
 
-.logo-badge {
-  width: clamp(58px, 6.6vw, 82px);
-  height: clamp(58px, 6.6vw, 82px);
-  border-radius: 50%;
-  border: 2px solid var(--border);
-  background: #ffffff;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
+.logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: clamp(118px, 11.5vw, 142px);
+  padding: 12px 16px;
+  box-sizing: border-box;
   transition: transform var(--transition), box-shadow var(--transition);
 }
 
-.logo-badge:hover {
+.logo-item--boosted {
+  padding: 8px 12px;
+}
+
+.logo-item:hover {
   transform: translate(-2px, -2px);
-  box-shadow: var(--shadow-soft);
 }
 
 .logo-img {
-  width: 70%;
-  height: 70%;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 86px;
   object-fit: contain;
+}
+
+.logo-img--boosted {
+  max-height: 104px;
 }
 
 @media (max-width: 720px) {
   .logo-grid {
-    gap: 10px;
+    gap: 8px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .logo-badge {
-    width: 62px;
-    height: 62px;
+  .logo-item {
+    min-height: 104px;
+    padding: 10px 14px;
+  }
+
+  .logo-item--boosted {
+    padding: 6px 10px;
+  }
+
+  .logo-img {
+    max-height: 68px;
+  }
+
+  .logo-img--boosted {
+    max-height: 82px;
   }
 }
 
@@ -1098,10 +1423,11 @@ a {
 }
 
 .contact-card {
-  border: 2px solid var(--border);
+  max-width: 700px;
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 28px;
-  background: #ffffff;
+  background: var(--card);
   box-shadow: var(--shadow);
   display: grid;
   gap: 16px;
@@ -1114,7 +1440,7 @@ a {
 }
 
 .contact-card p {
-  color: var(--ink-soft);
+  color: var(--ink-muted);
 }
 
 .contact-links {
@@ -1123,17 +1449,22 @@ a {
   gap: 12px;
 }
 
+.contact-links .cta {
+  width: auto;
+  max-width: 100%;
+}
+
 .chip {
   padding: 8px 14px;
   border-radius: 999px;
-  border: 2px solid var(--border);
+  border: 1px solid var(--border);
   font-family: "IBM Plex Mono", monospace;
   font-size: 12px;
   text-transform: uppercase;
 }
 
 footer {
-  border-top: 2px solid var(--border);
+  border-top: 1px solid var(--border);
   padding: 24px 0 40px;
   font-family: "IBM Plex Mono", monospace;
   font-size: 12px;
@@ -1154,13 +1485,31 @@ footer {
   flex-wrap: wrap;
 }
 
+.footer-links a:hover {
+  color: var(--accent);
+}
+
 @media (max-width: 960px) {
+  .container {
+    width: min(calc(100% - 32px), var(--container));
+  }
+
   .hero-grid {
     grid-template-columns: 1fr;
+    gap: 24px;
   }
 
   .about-grid {
     grid-template-columns: 1fr;
+  }
+
+  .approach-card {
+    grid-template-columns: 1fr;
+    padding: 28px;
+  }
+
+  .approach-points {
+    margin-top: 0;
   }
 
   .section-head {
@@ -1168,27 +1517,81 @@ footer {
     align-items: flex-start;
   }
 
-  .services-hybrid {
-    grid-template-columns: 1fr;
+  .services-track {
+    gap: 16px;
   }
 
-  .services-sticky {
-    position: static;
+  .services-arrow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .services-arrow--prev {
+    left: 8px;
+  }
+
+  .services-arrow--next {
+    right: 8px;
   }
 }
 
 @media (max-width: 720px) {
+  .container {
+    width: min(calc(100% - 24px), var(--container));
+  }
+
+  .ticker {
+    font-size: 10px;
+    letter-spacing: 0.16em;
+  }
+
+  .ticker-track {
+    gap: 28px;
+    padding: 10px 0;
+  }
+
   .header-row {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
+    padding: 14px 0;
+  }
+
+  .logo {
+    justify-content: center;
   }
 
   .nav-links {
     flex-wrap: wrap;
+    gap: 12px 16px;
+    justify-content: center;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+  }
+
+  .site-header .cta.small {
+    width: 100%;
+  }
+
+  .hero {
+    padding: 44px 0 24px;
   }
 
   .hero-main {
-    padding: 28px;
+    padding: 22px;
+  }
+
+  .hero-title {
+    font-size: clamp(30px, 10vw, 42px);
+  }
+
+  .hero-subtitle,
+  .hero-specialties-title {
+    font-size: 16px;
+  }
+
+  .hero-specialties-list {
+    gap: 8px;
+    padding-left: 18px;
   }
 
   .cta {
@@ -1196,7 +1599,74 @@ footer {
   }
 
   .photo-card {
-    padding: 16px;
+    padding: 14px;
+  }
+
+  .photo-frame {
+    aspect-ratio: 4 / 5;
+  }
+
+  .photo-img {
+    min-height: 0;
+  }
+
+  .section {
+    padding: 52px 0;
+  }
+
+  .section-title {
+    font-size: clamp(24px, 8vw, 32px);
+  }
+
+  .about-copy,
+  .about-when,
+  .approach-card,
+  .contact-card {
+    padding: 22px;
+  }
+
+  .about-list,
+  .about-when-list,
+  .approach-text,
+  .approach-list {
+    font-size: 16px;
+  }
+
+  .approach-lead,
+  .approach-points-title {
+    font-size: 17px;
+  }
+
+  .approach-points,
+  .quote-card {
+    padding: 18px;
+  }
+
+  .service-title {
+    font-size: 21px;
+  }
+
+  .service-description,
+  .service-list {
+    font-size: 16px;
+  }
+
+  .service-card {
+    flex-basis: 100%;
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .service-card-top {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .service-tag,
+  .service-price-chip {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
   }
 
   .when-card {
@@ -1211,13 +1681,66 @@ footer {
   .when-card:hover {
     transform: translateY(-6px);
   }
+
+  .services-arrow {
+    display: none;
+  }
+
+  .contact-links {
+    flex-direction: column;
+  }
+
+  .contact-links .cta {
+    width: 100%;
+  }
+
+  .footer-row,
+  .footer-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-row {
+    gap: 14px;
+  }
+
+  .nav-links {
+    justify-content: flex-start;
+  }
+
+  .hero-main,
+  .about-copy,
+  .about-when,
+  .approach-card,
+  .contact-card,
+  .service-card {
+    padding: 18px;
+  }
+
+  .service-title {
+    font-size: 19px;
+  }
+
+  .service-description,
+  .service-list,
+  .about-list,
+  .about-when-list,
+  .approach-text,
+  .approach-list {
+    font-size: 15px;
+  }
+
+  .logo-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .ticker-track,
   .reveal,
-  .scroll-progress-bar,
-  .services-progress-bar {
+  .scroll-progress-bar {
     animation: none;
     transition: none;
   }
