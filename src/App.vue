@@ -168,7 +168,17 @@
           <h2 class="section-title">Мои услуги</h2>
         </div>
         <div class="services-rail">
-          <div class="services-slider" aria-live="polite">
+          <p
+            v-show="!servicesCanScrollPrev && servicesCanScrollNext"
+            class="services-mobile-hint"
+          >
+            Свайпните, чтобы посмотреть все услуги <span aria-hidden="true">→</span>
+          </p>
+          <div
+            class="services-slider"
+            :class="{ 'services-slider--has-next': servicesCanScrollNext }"
+            aria-live="polite"
+          >
             <button
               class="services-arrow services-arrow--prev"
               type="button"
@@ -1314,6 +1324,18 @@ a {
   position: relative;
 }
 
+.services-mobile-hint {
+  display: none;
+  margin: 0 0 14px;
+  align-items: center;
+  gap: 8px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: rgba(255, 255, 255, 0.78);
+}
+
 .services-track {
   display: flex;
   gap: 22px;
@@ -1626,6 +1648,8 @@ footer {
 
   .cta {
     width: 100%;
+    justify-content: center;
+    text-align: center;
   }
 
   .photo-card {
@@ -1682,7 +1706,7 @@ footer {
   }
 
   .service-card {
-    flex-basis: 100%;
+    flex-basis: 88%;
     min-height: auto;
     padding: 20px;
   }
@@ -1716,6 +1740,22 @@ footer {
     display: none;
   }
 
+  .services-mobile-hint {
+    display: inline-flex;
+  }
+
+  .services-slider--has-next::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 44px;
+    pointer-events: none;
+    background: linear-gradient(90deg, rgba(20, 20, 20, 0), rgba(20, 20, 20, 0.96));
+    border-radius: 0 var(--radius) var(--radius) 0;
+  }
+
   .contact-links {
     flex-direction: column;
   }
@@ -1737,7 +1777,9 @@ footer {
   }
 
   .nav-links {
-    justify-content: flex-start;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
   }
 
   .hero-main,
@@ -1747,6 +1789,10 @@ footer {
   .contact-card,
   .service-card {
     padding: 18px;
+  }
+
+  .service-card {
+    flex-basis: 86%;
   }
 
   .service-title {
