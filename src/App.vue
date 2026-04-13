@@ -6,9 +6,24 @@
     <!-- Ticker -->
     <div class="ticker" aria-label="Новостная лента">
       <div class="ticker-track">
-        <span>e-commerce • retail media • стратегия</span>
-        <span>e-commerce • retail media • стратегия</span>
-        <span>e-commerce • retail media • стратегия</span>
+        <div class="ticker-group" aria-hidden="false">
+          <span>e-commerce • retail media • стратегия</span>
+          <span>e-commerce • retail media • стратегия</span>
+          <span>e-commerce • retail media • стратегия</span>
+          <span>e-commerce • retail media • стратегия</span>
+          <span>e-commerce • retail media • стратегия</span>
+          <span>e-commerce • retail media • стратегия</span>
+          <span>e-commerce • retail media • стратегия</span>
+        </div>
+        <div class="ticker-group" aria-hidden="true">
+          <span>e-commerce • retail media • стратегия</span>
+          <span>e-commerce • retail media • стратегия</span>
+          <span>e-commerce • retail media • стратегия</span>
+          <span>e-commerce • retail media • стратегия</span>
+          <span>e-commerce • retail media • стратегия</span>
+          <span>e-commerce • retail media • стратегия</span>
+          <span>e-commerce • retail media • стратегия</span>
+        </div>
       </div>
     </div>
 
@@ -618,12 +633,24 @@ a {
 
 .ticker-track {
   display: flex;
-  gap: 48px;
+  width: max-content;
+  min-width: 100%;
   padding: 12px 0;
-  animation: ticker 20s linear infinite;
+  animation: ticker 18s linear infinite;
+}
+
+.ticker-group {
+  flex: 0 0 100%;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(32px, 7vw, 120px);
 }
 
 .ticker-track span {
+  flex: 1 1 0;
+  text-align: center;
   white-space: nowrap;
 }
 
@@ -1546,8 +1573,11 @@ footer {
   }
 
   .ticker-track {
-    gap: 28px;
     padding: 10px 0;
+  }
+
+  .ticker-group {
+    gap: 20px;
   }
 
   .header-row {
@@ -1733,7 +1763,31 @@ footer {
   }
 
   .logo-grid {
-    grid-template-columns: 1fr;
+    gap: 6px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .logo-item {
+    min-height: 72px;
+    padding: 8px;
+  }
+
+  .logo-item--boosted {
+    padding: 6px;
+  }
+
+  .logo-img {
+    max-height: 40px;
+  }
+
+  .logo-img--boosted {
+    max-height: 48px;
+  }
+}
+
+@media (max-width: 380px) {
+  .logo-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
