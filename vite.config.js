@@ -1,6 +1,15 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
+import { resolve } from "node:path";
 
 export default defineConfig({
-  plugins: [vue()]
+  plugins: [vue()],
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+        privacy: resolve(__dirname, "privacy/index.html")
+      }
+    }
+  }
 });

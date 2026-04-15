@@ -1,5 +1,172 @@
 <template>
-  <div class="page">
+  <div v-if="isPrivacyPage" class="page privacy-page">
+    <header class="site-header" aria-label="Шапка">
+      <div class="container header-row">
+        <a class="logo" href="/" aria-label="На главную">
+          <span class="logo-dot"></span>
+          Артем Никандров
+        </a>
+        <nav class="nav-links" aria-label="Навигация по документу">
+          <a href="/">На главную</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="privacy-main">
+      <section class="section privacy-section" aria-label="Политика обработки персональных данных">
+        <div class="container privacy-container">
+          <p class="eyebrow">Юридическая информация</p>
+          <h1 class="privacy-title">Политика обработки персональных данных</h1>
+          <p class="privacy-updated">Дата публикации: 15 апреля 2026 года</p>
+
+          <div class="privacy-content">
+            <section>
+              <h2>1. Общие положения</h2>
+              <p>
+                Настоящая Политика определяет порядок обработки персональных данных
+                пользователей сайта Артема Никандрова, размещенного в сети Интернет.
+              </p>
+              <p>
+                Оператор персональных данных: индивидуальный предприниматель Никандров
+                Артем Олегович, ИНН 352535819890, email:
+                <a href="mailto:artnikandrov@gmail.com">artnikandrov@gmail.com</a>.
+              </p>
+              <p>
+                Политика подготовлена с учетом Федерального закона от 27.07.2006
+                N 152-ФЗ "О персональных данных" и применяется ко всем данным, которые
+                Оператор может получить при использовании сайта и при обращении через
+                указанные на сайте контакты.
+              </p>
+            </section>
+
+            <section>
+              <h2>2. Какие данные обрабатываются</h2>
+              <p>Оператор может обрабатывать следующие категории данных:</p>
+              <ul>
+                <li>имя, фамилию, никнейм или иное имя, которое пользователь сообщает при обращении;</li>
+                <li>контактные данные: email, аккаунт в мессенджере, телефон, если пользователь сообщает его сам;</li>
+                <li>содержание сообщений, запросов и приложенных пользователем материалов;</li>
+                <li>технические данные: IP-адрес, сведения о браузере, устройстве, операционной системе, дате и времени посещения;</li>
+                <li>данные cookies и похожих технологий, если пользователь согласился на их использование.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>3. Цели обработки</h2>
+              <p>Персональные данные обрабатываются для следующих целей:</p>
+              <ul>
+                <li>ответ на обращение пользователя и запись на консультацию;</li>
+                <li>подготовка, согласование и оказание консультационных услуг;</li>
+                <li>ведение деловой переписки и документооборота;</li>
+                <li>обеспечение корректной и безопасной работы сайта;</li>
+                <li>анализ посещаемости сайта и улучшение материалов сайта при подключении Яндекс Метрики;</li>
+                <li>исполнение обязанностей, предусмотренных законодательством Российской Федерации.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>4. Правовые основания обработки</h2>
+              <p>
+                Обработка персональных данных осуществляется на основании согласия
+                пользователя, действий пользователя по направлению обращения Оператору,
+                необходимости заключения или исполнения договора, а также требований
+                законодательства Российской Федерации.
+              </p>
+            </section>
+
+            <section>
+              <h2>5. Cookies и аналитика</h2>
+              <p>
+                Сайт использует необходимые технические данные для своей работы. В
+                будущем на сайте может быть подключена Яндекс Метрика для анализа
+                посещаемости, источников переходов и поведения пользователей на сайте.
+              </p>
+              <p>
+                Аналитические cookies используются только после согласия пользователя.
+                Пользователь может ограничить или удалить cookies в настройках браузера.
+                При отказе от аналитических cookies сайт продолжит работать, но Оператор
+                не будет получать статистику посещений через такие инструменты.
+              </p>
+            </section>
+
+            <section>
+              <h2>6. Передача данных третьим лицам</h2>
+              <p>
+                Оператор может передавать данные сервисам, которые необходимы для работы
+                сайта, связи с пользователем, аналитики и исполнения договоренностей:
+                хостинг-провайдеру, почтовым сервисам, мессенджерам, сервисам аналитики
+                и иным подрядчикам, если такая передача необходима для указанных в
+                Политике целей.
+              </p>
+              <p>
+                Оператор не продает персональные данные пользователей и не передает их
+                третьим лицам для самостоятельного маркетинга без отдельного основания.
+              </p>
+            </section>
+
+            <section>
+              <h2>7. Сроки хранения</h2>
+              <p>
+                Персональные данные хранятся не дольше, чем требуется для целей обработки,
+                ответа на обращение, оказания услуг, исполнения договора и соблюдения
+                требований закона. Данные переписки могут храниться в течение срока,
+                необходимого для подтверждения договоренностей и защиты законных интересов
+                Оператора.
+              </p>
+            </section>
+
+            <section>
+              <h2>8. Права пользователя</h2>
+              <p>Пользователь вправе:</p>
+              <ul>
+                <li>получать информацию об обработке своих персональных данных;</li>
+                <li>требовать уточнения, блокирования или удаления персональных данных;</li>
+                <li>отозвать согласие на обработку персональных данных;</li>
+                <li>обжаловать действия или бездействие Оператора в уполномоченный орган или суд.</li>
+              </ul>
+              <p>
+                Для реализации прав пользователь может написать на
+                <a href="mailto:artnikandrov@gmail.com">artnikandrov@gmail.com</a>.
+              </p>
+            </section>
+
+            <section>
+              <h2>9. Защита данных</h2>
+              <p>
+                Оператор принимает необходимые правовые, организационные и технические
+                меры для защиты персональных данных от неправомерного доступа,
+                уничтожения, изменения, блокирования, копирования, распространения и иных
+                неправомерных действий.
+              </p>
+            </section>
+
+            <section>
+              <h2>10. Изменение Политики</h2>
+              <p>
+                Оператор может обновлять Политику. Новая редакция действует с момента
+                публикации на сайте, если иное не указано в тексте новой редакции.
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer aria-label="Футер">
+      <div class="container footer-row footer-row--legal">
+        <div class="footer-legal">
+          <div>© {{ year }} ИП Никандров Артем Олегович.</div>
+          <div>ИНН 352535819890</div>
+          <a class="footer-email" href="mailto:artnikandrov@gmail.com">artnikandrov@gmail.com</a>
+        </div>
+        <div class="footer-links">
+          <a href="/">На главную</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div v-else class="page">
     <div class="scroll-progress" aria-hidden="true">
       <div class="scroll-progress-bar" :style="{ width: scrollProgress + '%' }"></div>
     </div>
@@ -275,6 +442,7 @@
           <h2 class="section-title">Контакты</h2>
         </div>
         <div class="contact-card reveal">
+          <p class="contact-links-title">Записаться через</p>
           <div class="contact-links">
             <a
               class="cta"
@@ -283,7 +451,7 @@
               rel="noreferrer"
               aria-label="Записаться через Telegram"
             >
-              Записаться через Telegram
+              Telegram
             </a>
             <a
               class="cta"
@@ -292,9 +460,14 @@
               rel="noreferrer"
               aria-label="Записаться через Max"
             >
-              Записаться через Max
+              MAX
             </a>
           </div>
+          <p class="contact-privacy">
+            Переходя в мессенджер и отправляя сообщение, вы соглашаетесь с
+            обработкой персональных данных согласно
+            <a href="/privacy">Политике</a>.
+          </p>
         </div>
       </div>
     </section>
@@ -302,21 +475,54 @@
     <!-- Footer -->
     <footer aria-label="Футер">
       <div class="container footer-row">
-        <div>© {{ year }} Артём Никандров.</div>
+        <div class="footer-legal">
+          <div>© {{ year }} ИП Никандров Артем Олегович.</div>
+          <div>ИНН 352535819890</div>
+          <a class="footer-email" href="mailto:artnikandrov@gmail.com">artnikandrov@gmail.com</a>
+        </div>
         <div class="footer-links">
           <a href="#about" @click.prevent="scrollTo('about')">О себе</a>
           <a href="#services" @click.prevent="scrollTo('services')">Услуги</a>
           <a href="#experience" @click.prevent="scrollTo('experience')">Опыт</a>
           <a href="#contacts" @click.prevent="scrollTo('contacts')">Контакты</a>
+          <a href="/privacy">Политика</a>
         </div>
       </div>
     </footer>
   </div>
+
+  <aside
+    v-if="showCookieBanner"
+    class="cookie-banner"
+    role="dialog"
+    aria-live="polite"
+    aria-label="Настройки cookies"
+  >
+    <div>
+      <p class="cookie-title">Cookies</p>
+      <p class="cookie-text">
+        Сайт использует необходимые cookies. Аналитические cookies для Яндекс
+        Метрики будут включаться только после вашего согласия.
+        <a href="/privacy">Подробнее</a>
+      </p>
+    </div>
+    <div class="cookie-actions">
+      <button class="cookie-button cookie-button--secondary" type="button" @click="rejectAnalyticsCookies">
+        Только необходимые
+      </button>
+      <button class="cookie-button" type="button" @click="acceptAnalyticsCookies">
+        Принять
+      </button>
+    </div>
+  </aside>
 </template>
 
 <script setup>
 import { computed, onBeforeUnmount, onMounted, ref } from "vue";
 import authorPhoto from "./assets/author-photo-artem.jpg";
+
+const COOKIE_CONSENT_KEY = "artnikandrov_cookie_consent";
+const YANDEX_METRIKA_ID = "";
 
 const clientLogos = [
   { name: "Karcher", src: "/logos/karcher-new.png", boosted: true },
@@ -436,12 +642,60 @@ const services = [
 ];
 
 const year = new Date().getFullYear();
+const currentPath = ref(typeof window !== "undefined" ? window.location.pathname : "/");
+const isPrivacyPage = computed(() => currentPath.value.replace(/\/$/, "") === "/privacy");
+const showCookieBanner = ref(false);
 const scrollProgress = ref(0);
 const servicesTrack = ref(null);
 const servicesCanScrollPrev = ref(false);
 const servicesCanScrollNext = ref(true);
 let rafId = 0;
 let revealObserver = null;
+let metrikaLoaded = false;
+
+const loadYandexMetrika = () => {
+  if (!YANDEX_METRIKA_ID || metrikaLoaded || typeof window === "undefined") return;
+  metrikaLoaded = true;
+
+  window.ym =
+    window.ym ||
+    function (...args) {
+      (window.ym.a = window.ym.a || []).push(args);
+    };
+  window.ym.l = Number(new Date());
+
+  const script = document.createElement("script");
+  script.async = true;
+  script.src = "https://mc.yandex.ru/metrika/tag.js";
+  document.head.appendChild(script);
+
+  window.ym(Number(YANDEX_METRIKA_ID), "init", {
+    clickmap: true,
+    trackLinks: true,
+    accurateTrackBounce: true,
+    webvisor: true,
+  });
+};
+
+const readCookieConsent = () => {
+  if (typeof window === "undefined") return null;
+  return window.localStorage.getItem(COOKIE_CONSENT_KEY);
+};
+
+const saveCookieConsent = (value) => {
+  if (typeof window === "undefined") return;
+  window.localStorage.setItem(COOKIE_CONSENT_KEY, value);
+  showCookieBanner.value = false;
+};
+
+const acceptAnalyticsCookies = () => {
+  saveCookieConsent("analytics");
+  loadYandexMetrika();
+};
+
+const rejectAnalyticsCookies = () => {
+  saveCookieConsent("necessary");
+};
 
 const updateServicesArrows = () => {
   const el = servicesTrack.value;
@@ -491,6 +745,13 @@ const handleScroll = () => {
 };
 
 onMounted(() => {
+  currentPath.value = window.location.pathname;
+  const cookieConsent = readCookieConsent();
+  showCookieBanner.value = !cookieConsent;
+  if (cookieConsent === "analytics") {
+    loadYandexMetrika();
+  }
+
   updateScrollProgress();
   updateServicesArrows();
 
@@ -1492,6 +1753,15 @@ a {
   color: var(--ink-muted);
 }
 
+.contact-links-title {
+  margin: 0;
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 12px;
+  color: var(--ink-muted);
+}
+
 .contact-links {
   display: flex;
   flex-wrap: wrap;
@@ -1501,6 +1771,27 @@ a {
 .contact-links .cta {
   width: auto;
   max-width: 100%;
+}
+
+.contact-privacy {
+  max-width: 560px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.contact-privacy a,
+.privacy-content a,
+.footer-legal a,
+.cookie-text a {
+  color: var(--accent-hover);
+  border-bottom: 1px solid currentColor;
+}
+
+.contact-privacy a:hover,
+.privacy-content a:hover,
+.footer-legal a:hover,
+.cookie-text a:hover {
+  color: var(--ink-strong);
 }
 
 .chip {
@@ -1528,6 +1819,22 @@ footer {
   flex-wrap: wrap;
 }
 
+.footer-row--legal {
+  align-items: flex-start;
+}
+
+.footer-legal {
+  display: grid;
+  gap: 8px;
+  max-width: 520px;
+  line-height: 1.5;
+}
+
+.footer-legal .footer-email {
+  border-bottom: 0;
+  text-decoration: none;
+}
+
 .footer-links {
   display: flex;
   gap: 16px;
@@ -1536,6 +1843,143 @@ footer {
 
 .footer-links a:hover {
   color: var(--accent);
+}
+
+.privacy-page {
+  min-height: 100vh;
+}
+
+.privacy-main {
+  min-height: calc(100vh - 180px);
+}
+
+.privacy-section {
+  padding-top: 72px;
+}
+
+.privacy-container {
+  max-width: 920px;
+}
+
+.privacy-title {
+  max-width: 820px;
+  margin-top: 14px;
+  font-size: clamp(36px, 6vw, 70px);
+  line-height: 0.95;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.privacy-updated {
+  margin-top: 18px;
+  color: var(--ink-muted);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.privacy-content {
+  display: grid;
+  gap: 28px;
+  margin-top: 44px;
+  padding: 32px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+.privacy-content section {
+  display: grid;
+  gap: 12px;
+}
+
+.privacy-content h2 {
+  font-size: clamp(20px, 3vw, 28px);
+  line-height: 1.15;
+}
+
+.privacy-content p,
+.privacy-content li {
+  color: var(--ink-muted);
+  font-size: 16px;
+}
+
+.privacy-content ul {
+  display: grid;
+  gap: 8px;
+  padding-left: 22px;
+}
+
+.cookie-banner {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 50;
+  width: min(560px, calc(100% - 48px));
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 18px;
+  align-items: center;
+  padding: 18px;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  background: rgba(26, 26, 26, 0.98);
+  box-shadow: var(--shadow-float);
+}
+
+.cookie-title {
+  margin-bottom: 6px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.cookie-text {
+  color: var(--ink-muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.cookie-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.cookie-button {
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  cursor: pointer;
+  padding: 11px 14px;
+  font: inherit;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: background var(--transition), border-color var(--transition), transform var(--transition);
+}
+
+.cookie-button:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.cookie-button--secondary {
+  background: transparent;
+  border-color: var(--border-strong);
+}
+
+.cookie-button--secondary:hover {
+  background: var(--surface-dark);
+  border-color: var(--ink-strong);
 }
 
 @media (max-width: 960px) {
@@ -1632,6 +2076,10 @@ footer {
     padding: 22px;
   }
 
+  .hero-side {
+    order: -1;
+  }
+
   .hero-title {
     font-size: clamp(30px, 10vw, 42px);
   }
@@ -1706,7 +2154,7 @@ footer {
   }
 
   .service-card {
-    flex-basis: 88%;
+    flex-basis: 80%;
     min-height: auto;
     padding: 20px;
   }
@@ -1750,24 +2198,51 @@ footer {
     top: 0;
     right: 0;
     bottom: 0;
-    width: 44px;
+    width: 28px;
     pointer-events: none;
     background: linear-gradient(90deg, rgba(20, 20, 20, 0), rgba(20, 20, 20, 0.96));
     border-radius: 0 var(--radius) var(--radius) 0;
   }
 
   .contact-links {
-    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
   }
 
   .contact-links .cta {
-    width: 100%;
+    width: auto;
+    flex: 1 1 0;
+    min-width: 0;
   }
 
   .footer-row,
   .footer-links {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .privacy-section {
+    padding-top: 52px;
+  }
+
+  .privacy-content {
+    padding: 22px;
+  }
+
+  .cookie-banner {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    width: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .cookie-actions {
+    justify-content: stretch;
+  }
+
+  .cookie-button {
+    flex: 1 1 180px;
   }
 }
 
@@ -1792,7 +2267,7 @@ footer {
   }
 
   .service-card {
-    flex-basis: 86%;
+    flex-basis: 80%;
   }
 
   .service-title {
