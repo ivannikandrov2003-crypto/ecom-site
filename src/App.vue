@@ -1578,7 +1578,7 @@ a {
 }
 
 .services-rail {
-  padding-top: 10px;
+  padding-top: 14px;
 }
 
 .services-slider {
@@ -1600,6 +1600,7 @@ a {
 .services-track {
   display: flex;
   gap: 22px;
+  padding: 12px 0 28px;
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
@@ -1634,6 +1635,24 @@ a {
   pointer-events: none;
   transition: opacity var(--transition), transform var(--transition), border-color var(--transition), color var(--transition);
   z-index: 2;
+}
+
+.services-arrow span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+  transform: translateY(-1px);
+}
+
+.services-arrow--prev span {
+  transform: translate(-1px, -1px);
+}
+
+.services-arrow--next span {
+  transform: translate(1px, -1px);
 }
 
 .services-slider:hover .services-arrow:not(:disabled) {
