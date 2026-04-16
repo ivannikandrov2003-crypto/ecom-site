@@ -155,7 +155,7 @@
     <footer aria-label="Футер">
       <div class="container footer-row footer-row--legal">
         <div class="footer-legal">
-          <div>© {{ year }} ИП Никандров Артем Олегович.</div>
+          <div>© {{ year }} ИП Никандров Артем Олегович</div>
           <div>ИНН 352535819890</div>
           <a class="footer-email" href="mailto:artnikandrov@gmail.com">artnikandrov@gmail.com</a>
         </div>
@@ -476,7 +476,7 @@
     <footer aria-label="Футер">
       <div class="container footer-row">
         <div class="footer-legal">
-          <div>© {{ year }} ИП Никандров Артем Олегович.</div>
+          <div>© {{ year }} ИП Никандров Артем Олегович</div>
           <div>ИНН 352535819890</div>
           <a class="footer-email" href="mailto:artnikandrov@gmail.com">artnikandrov@gmail.com</a>
         </div>
